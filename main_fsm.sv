@@ -134,7 +134,7 @@ always @(posedge clk) begin
         next=`layer_3_act;
     end
     `layer_3_vdff: if(test==1'b1) begin
-        next=layer_1_init;
+        next= `layer_1_init;
         end else begin
             next=`halt;
         end
